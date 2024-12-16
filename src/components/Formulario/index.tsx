@@ -26,7 +26,7 @@ export default function Formulario() {
           required
         />
       </div>
-      <Botao>Oi</Botao>
+      <Botao>Adicionar</Botao>
     </form>
   );
 }
