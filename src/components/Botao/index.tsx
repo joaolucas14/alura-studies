@@ -1,3 +1,4 @@
+import "./style.scss";
 export default function Botao() {
-  return <button>Botao</button>;
+  return <button className="botao">Botao</button>;
 }
