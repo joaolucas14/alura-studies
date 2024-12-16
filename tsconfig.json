@@ -9,7 +9,6 @@
       ],
       "allowJs": true,
       "skipLibCheck": true,
-      "esModuleInterop": true,
       "allowSyntheticDefaultImports": true,
       "strict": true,
       "forceConsistentCasingInFileNames": true,
@@ -18,7 +17,10 @@
       "moduleResolution": "node",
       "resolveJsonModule": true,
       "isolatedModules": true,
+      "esModuleInterop": true,
       "noEmit": true,
+      "plugins": [{ "name": "typescript-plugin-css-modules" }]
+
     },
     "include": [
       "src"
