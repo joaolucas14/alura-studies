@@ -12,6 +12,12 @@ function App() {
 
   function selecionaTarefa(tarefaSelecionada: Itarefa) {
     setSelecionado(tarefaSelecionada);
+    setTarefas((tarefasAnteriores) =>
+      tarefasAnteriores.map((tarefa) => ({
+        ...tarefa,
+        selecionado: tarefa.id === tarefaSelecionada.id ? true : false,
+      }))
+    );
   }
   return (
     <div className={style.AppStyle}>
