@@ -19,8 +19,8 @@
       "isolatedModules": true,
       "esModuleInterop": true,
       "noEmit": true,
-      "plugins": [{ "name": "typescript-plugin-css-modules" }]
-
+      "plugins": [{ "name": "typescript-plugin-css-modules" }],
+      "downlevelIteration": true,
     },
     "include": [
       "src"
