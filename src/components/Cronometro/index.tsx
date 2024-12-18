@@ -7,8 +7,12 @@ import Relogio from "./Relogio";
 
 interface cronometroProps {
   selecionado: Itarefa | undefined;
+  finalizarTarefa: () => void;
 }
-export default function Cronometro({ selecionado }: cronometroProps) {
+export default function Cronometro({
+  selecionado,
+  finalizarTarefa,
+}: cronometroProps) {
   const [tempo, setTempo] = useState<number>();
 
   useEffect(() => {
@@ -23,6 +27,7 @@ export default function Cronometro({ selecionado }: cronometroProps) {
         setTempo(contador - 1);
         return regressiva(contador - 1);
       }
+      finalizarTarefa();
     }, 1000);
   }
   return (
